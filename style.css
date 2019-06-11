@@ -80,7 +80,7 @@ body {
 }
 
 .seven {
-  grid-column: 1 / 5;
+  grid-column: 1 / 3;
   grid-row: 5 / 10;
 }
 
@@ -142,7 +142,8 @@ body {
 
 .project-child {
   /* margin: 25px; */
-  width: 15vw;
+  /* width: 15vw; */
+  justify-self: stretch;
   height: auto;
   background: #111;
   border: solid blueviolet;
@@ -153,10 +154,8 @@ body {
 }
 
 .project-child:hover {
-  /* margin: 25px; */
-  width: 250px;
   height: auto;
-  background: black;
+  background: blueviolet;
   border: solid white;
   border-color: white;
   cursor: pointer;
@@ -292,6 +291,7 @@ div:nth-child(n+8) {
 .technologies-table td {
   text-align: center;
   padding: 0.5vw;
+  font-size: 0.75vw;
 }
 
 .banner-temp {
