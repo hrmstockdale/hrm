@@ -130,8 +130,8 @@ body {
   justify-self: stretch;
   height: auto;
   background: #111;
-  border: solid blueviolet;
-  border-color: blueviolet;
+  /* border: solid blueviolet;
+  border-color: blueviolet; */
   float: left;
   border-width: 5px 3px 3px 5px;
   border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
@@ -150,6 +150,8 @@ body {
 .oddboxinner {
   margin: 15px;
   transform: rotate(-2deg);
+  display: flex;
+  flex-direction: column;
 }
 
 .crt::before {
