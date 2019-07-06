@@ -127,7 +127,8 @@ body {
 .project-child {
   /* margin: 25px; */
   /* width: 15vw; */
-  justify-self: stretch;
+  justify-self: center;
+  align-self: center;
   height: auto;
   background: #111;
   /* border: solid blueviolet;
@@ -145,6 +146,23 @@ body {
   cursor: pointer;
   border-width: 5px 3px 3px 5px;
   border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
+}
+
+.project-child-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  /* transition: 0.1s ease-in-out; */
+  background-color: blueviolet;
+}
+
+.project-child-overlay:hover {
+  opacity: 1;
 }
 
 .oddboxinner {
@@ -304,6 +322,9 @@ div:nth-child(n+8) {
   }
   .project-child {
     justify-self: center;
+  }
+  .project-child-overlay:hover {
+    opacity: 0;
   }
 }
 
